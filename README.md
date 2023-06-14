@@ -1,4 +1,13 @@
-# AngularPortfolio
+# Angular Portfolio
+
+My Website!
+
+Hosted at [benwakefield.dev](https://benwakefield.dev)
+
+## Status
+[![Netlify Status](https://api.netlify.com/api/v1/badges/b5fedb39-1528-488e-9abd-2aca8cfcb9cf/deploy-status)](https://app.netlify.com/sites/silver-empanada-07de5a/deploys)
+
+## Angular
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.0.5.
 
