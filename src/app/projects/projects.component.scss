@@ -2,6 +2,8 @@
     width: 100%;
     display: flex;
     justify-content: center;
+    margin-left: 1rem;
+    margin-right: 1rem;
 }
 
 .card-grid {
@@ -108,4 +110,16 @@
   
   .tag.selected {
     background-color: #8400c1;
+  }
+
+  @media screen and (max-width: 700px) {
+    .tags {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      margin-bottom: 1rem;
+      margin-right: 0.5rem;
+      margin-left: 0.5rem;
+      flex-wrap: wrap;
+    }
   }

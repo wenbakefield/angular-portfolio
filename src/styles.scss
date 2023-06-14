@@ -38,6 +38,7 @@ body mat-icon {
   padding-right: 0;
   width: auto; 
   max-width: 1380px;
+  height: 4rem;
   margin: 0 auto;
   z-index: 2;
   background-color: black;
@@ -151,17 +152,20 @@ footer {
 @media screen and (max-width: 700px) {
   .mat-toolbar.navbar {
     background-color: rgb(58, 0, 79);
-    margin-top: 0;
+    height: 5rem;
   }
   .grid {
     grid-template-columns: 1fr;
   }
   .container {
-    margin-top: 4rem;
+    margin-top: 13rem;
     margin-bottom: 4rem;
   }
   h2 {
     font-size: 1.5rem !important;
+  }
+  .image-box {
+    margin-bottom: 3rem;
   }
 }
 

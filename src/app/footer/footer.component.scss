@@ -43,7 +43,7 @@
 }
 
 .middle-column a:hover {
-    color: #007bff;
+    color: #c13aff;
 }
 
 .middle-column a i {
@@ -57,7 +57,14 @@
     .left-column,
     .middle-column,
     .right-column {
-      margin: 0.2rem 0;
-      justify-content: center; /* Center the content for mobile */
+      margin: auto;
+      justify-content: center;
     }
+
+    .left-column {
+        display: none
+    }
+    .right-column {
+        display: none
+      }
 }

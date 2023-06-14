@@ -1,0 +1,18 @@
+.navbar-toggler {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 5px;
+    width: 70px;
+    height: 70px;
+}
+
+.navbar-toggler mat-icon {
+    font-size: 40px;  /* You can adjust this size according to your need */
+    height: 40px;
+    width: 40px;
+}
+
+.navbar-brand {
+    margin-left: 5px;
+}
