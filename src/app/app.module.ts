@@ -22,6 +22,8 @@ import { FooterComponent } from './footer/footer.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { AngularSvgIconModule } from 'angular-svg-icon';
 import { HttpClientModule } from '@angular/common/http';
+import { NgxPageScrollModule } from 'ngx-page-scroll';
+import { NgxExtendedPdfViewerModule } from 'ngx-extended-pdf-viewer';
 
 @NgModule({
   declarations: [
@@ -49,6 +51,8 @@ import { HttpClientModule } from '@angular/common/http';
     MatMenuModule,
     NgbModule,
     FontAwesomeModule,
+    NgxPageScrollModule,
+    NgxExtendedPdfViewerModule,
     AngularSvgIconModule.forRoot()
   ],
   providers: [],

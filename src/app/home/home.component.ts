@@ -1,9 +1,11 @@
 import { Component, OnInit } from '@angular/core';
+import { fadeInOut } from '../app.animations';
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.scss']
+  styleUrls: ['./home.component.scss'],
+  animations: [fadeInOut],
 })
 export class HomeComponent {
   profileImage = './assets/profile.png';

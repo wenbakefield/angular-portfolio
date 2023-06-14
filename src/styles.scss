@@ -2,6 +2,12 @@
   font-family: 'Source Code Pro', monospace, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;
 }
 
+main {
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
 body {
   margin: 0;
   font-size: 1.25rem !important;
@@ -36,6 +42,7 @@ body mat-icon {
 .mat-toolbar .nav-link {
   color: white;
   font-size: 1.25rem;
+  padding-right: 2rem;
 }
 
 .logo.circular {
@@ -62,6 +69,12 @@ h2 {
   line-height: 1.15 !important;
 }
 
+h3 {
+  font-size: 1.7rem !important;
+  padding-bottom: 1rem;
+  line-height: 1.15 !important;
+}
+
 .grid {
   display: grid;
   grid-template-columns: 2fr 1fr;
@@ -84,7 +97,6 @@ h2 {
 }
 
 .box {
-  border: 1px solid rgb(255, 255, 255);
   padding: 10px;
   background-color: transparent;
   text-align: left;

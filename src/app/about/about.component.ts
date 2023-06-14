@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
-
+import { fadeInOut } from '../app.animations';
 @Component({
   selector: 'app-about',
   templateUrl: './about.component.html',
-  styleUrls: ['./about.component.scss']
+  styleUrls: ['./about.component.scss'],
+  animations: [fadeInOut],
 })
 export class AboutComponent {
   languages = ['python', 'java', 'cplusplus', 'javascript', 'typescript', 'csharp', 'ruby', 'elixir', 'sass', 'lua'];

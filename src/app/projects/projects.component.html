@@ -1,1 +1,33 @@
-<p>projects works!</p>
+<div class="container" [@fadeInOut]>
+    <h1 class="center-content">What I've been working on!</h1>
+    <h3 class="center-content">Filter by tag: </h3>
+    <div class="tags">
+        <button class="tag" [class.selected]="selectedTags.includes(tag)" *ngFor="let tag of allTags()" (click)="filterProjectsByTag(tag)">{{ tag }}</button>
+      </div>
+    <div class="card-grid">
+        <div class="card" *ngFor="let project of filteredProjects">
+          <img [src]="project.image" alt="Project Image" class="card-image" />
+      
+          <div class="card-content">
+            <h3 class="card-title">{{ project.title }}</h3>
+            <p class="card-description">{{ project.description }}</p>
+            <div class="card-tags">
+                <span *ngFor="let tag of project.tags">
+                  #{{ tag.toLowerCase() }}
+                </span>
+              </div>
+            <div class="card-actions">
+              <a [href]="project.sourceCodeLink" target="_blank" class="card-button">
+                <mat-icon class="card-icon">code</mat-icon>
+                Source Code
+              </a>
+      
+              <a [href]="project.demoLink" target="_blank" class="card-button">
+                <mat-icon class="card-icon">play_circle_filled</mat-icon>
+                Demo
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+</div>
