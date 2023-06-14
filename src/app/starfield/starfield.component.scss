@@ -1,0 +1,23 @@
+:host {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+}
+  
+  .star {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    background: rgb(129, 129, 129);
+    opacity: 0;
+    animation: twinkle 4s infinite ease-in-out;
+  }
+  
+  @keyframes twinkle {
+    0% { opacity: 0; }
+    50% { opacity: 1; }
+    100% { opacity: 0; }
+  }

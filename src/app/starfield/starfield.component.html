@@ -1,0 +1,6 @@
+<div *ngFor="let star of stars" 
+     class="star" 
+     [style.left.px]="star.x" 
+     [style.top.px]="star.y"
+     [style.animation-delay]="star.delay + 's'">
+</div>

@@ -1,1 +1,151 @@
-/* You can add global styles to this file, and also import other style files */
+* {
+  font-family: 'Source Code Pro', monospace, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;
+}
+
+body {
+  margin: 0;
+  font-size: 1.25rem !important;
+  color: #ffffff;
+  box-sizing: border-box;
+  line-height: 1.15;
+  background: #000;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+body mat-icon {
+  font-family: 'Material Icons' !important;
+}
+
+.mat-toolbar.navbar {
+  position: fixed;
+  transition: all 0.3s ease-out 0s;
+  top: 0;
+  left: 0;
+  right: 0; 
+  padding-left: 0;
+  padding-right: 0;
+  width: auto; 
+  max-width: 1380px;
+  margin: 0 auto;
+  z-index: 2;
+  background-color: black
+}
+
+.mat-toolbar .nav-link {
+  color: white;
+  font-size: 1.25rem;
+}
+
+.logo.circular {
+  border-radius: 50%;
+  width: 3em;
+  height: 3em;
+  object-fit: cover;
+  vertical-align: middle;
+}
+
+.primary-color {
+  color: #c13aff;
+}
+
+h1 {
+  font-size: 2.5rem !important;
+  padding-bottom: 1rem;
+  line-height: 1.15 !important;
+}
+
+h2 {
+  font-size: 2.5rem !important;
+  padding-bottom: 1rem;
+  line-height: 1.15 !important;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 10px;
+  padding: 10px;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 1380px;
+  margin: 0 auto;
+  margin-top: 12rem;
+  margin-bottom: 12rem;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.box {
+  border: 1px solid rgb(255, 255, 255);
+  padding: 10px;
+  background-color: transparent;
+  text-align: left;
+
+  &.image-box {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+    img {
+      max-width: 100%;
+      max-height: 100%;
+    }
+  }
+}
+
+.navbar-spacer {
+  flex: 1 1 auto;
+}
+
+footer {
+  position: fixed;
+  transition: all 0.3s ease-out 0s;
+  left: 0;
+  bottom: 0;
+  right: 0; 
+  padding-left: 0;
+  padding-right: 0;
+  width: 100%;
+  width: auto; 
+  max-width: 1380px;
+  margin: 0 auto;
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}
+
+@media (max-width: 1380px) {
+  .mat-toolbar.navbar {
+    width: 100%;
+  }
+  .container {
+    width: 100vw;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .mat-toolbar.navbar {
+    background-color: rgb(58, 0, 79);
+    margin-top: 0;
+  }
+  .grid {
+    grid-template-columns: 1fr;
+  }
+  .container {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+  }
+  h2 {
+    font-size: 1.5rem !important;
+  }
+}
+

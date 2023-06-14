@@ -1,0 +1,58 @@
+
+.center-content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.github-calendar {
+    display: flex;
+    max-width: 1200px;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    width: 90%;
+    margin-bottom: 5rem;
+}
+
+.icon-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 100px;
+    max-width: 1200px;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    width: 90%;
+    margin-bottom: 5rem;
+}
+
+.icon-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-card svg-icon svg {
+    width: 7em;
+    height: 7em;
+    transition: transform 0.3s ease;
+    fill: white;
+}
+
+.icon-card:hover svg-icon svg {
+    transform: scale(1.3);
+}
+
+@media screen and (max-width: 700px) {
+    .icon-card svg-icon svg {
+        width: 4em;
+        height: 4em;
+    }
+    .icon-grid {
+        gap: 50px;
+        grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+    }
+  }

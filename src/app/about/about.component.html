@@ -1,0 +1,31 @@
+<div class="container">
+    <h1 class="center-content">Contributions</h1>
+    <img class="github-calendar" src="https://ghchart.rshah.org/9400D3/wenbakefield" alt="Commit Calendar" />
+    <h1 class="center-content">Languages</h1>
+    <div class="icon-grid center-content">
+        <div class="icon-card" *ngFor="let icon of languages">
+            <svg-icon [src]="'assets/icons/' + icon + '.svg'"></svg-icon>
+        </div>
+    </div>
+
+    <h1 class="center-content">Libraries</h1>
+    <div class="icon-grid center-content">
+        <div class="icon-card" *ngFor="let icon of libraries">
+            <svg-icon [src]="'assets/icons/' + icon + '.svg'"></svg-icon>
+        </div>
+    </div>
+
+    <h1 class="center-content">Frameworks</h1>
+    <div class="icon-grid center-content">
+        <div class="icon-card" *ngFor="let icon of frameworks">
+            <svg-icon [src]="'assets/icons/' + icon + '.svg'"></svg-icon>
+        </div>
+    </div>
+
+    <h1 class="center-content">Platforms</h1>
+    <div class="icon-grid center-content">
+        <div class="icon-card" *ngFor="let icon of platforms">
+            <svg-icon [src]="'assets/icons/' + icon + '.svg'"></svg-icon>
+        </div>
+    </div>
+</div>

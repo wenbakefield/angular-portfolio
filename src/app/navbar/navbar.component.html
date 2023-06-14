@@ -1,0 +1,23 @@
+<mat-toolbar class="navbar">
+    <a mat-button class="navbar-brand" routerLink="/"><img class="logo circular" src="assets/profile_small.png" alt="logo"></a>
+    <span class="navbar-spacer"></span>
+    <button mat-button class="nav-link" *ngIf="!isMobile" routerLink="/">Home</button>
+    <button mat-button class="nav-link" *ngIf="!isMobile" routerLink="/about">About</button>
+    <button mat-button class="nav-link" *ngIf="!isMobile" routerLink="/projects">Projects</button>
+    <button mat-button class="nav-link" *ngIf="!isMobile" routerLink="/resume">Resume</button>
+    <button mat-button class="nav-link" *ngIf="!isMobile" routerLink="/blog">Blog</button>
+
+    <button mat-icon-button [matMenuTriggerFor]="menu" class="navbar-toggler" *ngIf="isMobile">
+        <mat-icon>menu</mat-icon>
+    </button>
+
+    <mat-menu #menu="matMenu">
+        <button mat-menu-item routerLink="/">Home</button>
+        <button mat-menu-item routerLink="/about">About</button>
+        <button mat-menu-item routerLink="/projects">Projects</button>
+        <button mat-menu-item routerLink="/resume">Resume</button>
+        <button mat-menu-item routerLink="/blog">Blog</button>
+    </mat-menu>
+</mat-toolbar>
+
+  

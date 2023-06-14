@@ -1,0 +1,12 @@
+.cursor {
+    display: inline-block;
+    width: 1ch;
+    margin-left: 2px;
+    border: 1px solid white;
+    animation: blink 1s steps(1) infinite;
+  }
+  
+  @keyframes blink {
+    0%, 50% { visibility: visible; }
+    51%, 100% { visibility: hidden; }
+  }
