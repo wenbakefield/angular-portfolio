@@ -20,6 +20,10 @@ body {
   overflow-x: hidden;
 }
 
+p {
+  line-height: 1.15;
+}
+
 body mat-icon {
   font-family: 'Material Icons' !important;
 }
@@ -36,13 +40,13 @@ body mat-icon {
   max-width: 1380px;
   margin: 0 auto;
   z-index: 2;
-  background-color: black
+  background-color: black;
+  gap: 1.5rem;
 }
 
 .mat-toolbar .nav-link {
   color: white;
   font-size: 1.25rem;
-  padding-right: 2rem;
 }
 
 .logo.circular {

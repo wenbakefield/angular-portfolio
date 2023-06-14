@@ -5,7 +5,7 @@
     <button mat-button class="nav-link" *ngIf="!isMobile" routerLink="/about">About</button>
     <button mat-button class="nav-link" *ngIf="!isMobile" routerLink="/projects">Projects</button>
     <button mat-button class="nav-link" *ngIf="!isMobile" routerLink="/resume">Resume</button>
-    <button mat-button class="nav-link" *ngIf="!isMobile" routerLink="/blog">Blog</button>
+    <a mat-button class="nav-link" *ngIf="!isMobile" href="https://www.linkedin.com/in/wenbakefield/recent-activity/all/" target="_blank" rel="noopener noreferrer">Blog</a>
 
     <button mat-icon-button [matMenuTriggerFor]="menu" class="navbar-toggler" *ngIf="isMobile">
         <mat-icon>menu</mat-icon>
@@ -16,7 +16,7 @@
         <button mat-menu-item routerLink="/about">About</button>
         <button mat-menu-item routerLink="/projects">Projects</button>
         <button mat-menu-item routerLink="/resume">Resume</button>
-        <button mat-menu-item routerLink="/blog">Blog</button>
+        <a mat-menu-item href="https://www.linkedin.com/in/wenbakefield/recent-activity/all/" target="_blank" rel="noopener noreferrer">Blog</a>
     </mat-menu>
 </mat-toolbar>
 
