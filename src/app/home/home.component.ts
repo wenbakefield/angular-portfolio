@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { fadeInOut } from '../app.animations';
+import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 
 @Component({
   selector: 'app-home',
@@ -8,13 +9,31 @@ import { fadeInOut } from '../app.animations';
   animations: [fadeInOut],
 })
 export class HomeComponent {
-  profileImage = './assets/profile.png';
+  profileImageSrc = './assets/profile.png';
   public textArray = ['Software Developer.', 'Musician.', 'Game Designer.', 'Spelunker.', 'AI Enthusiast.', 'Audio Engineer.'];
   public text = '';
   private currentIndex = -1;
 
+  constructor(private breakpointObserver: BreakpointObserver) { }
+
   ngOnInit() {
     this.typeWriter();
+
+    this.breakpointObserver.observe([
+      Breakpoints.Handset,
+      Breakpoints.Tablet,
+      Breakpoints.Web
+    ]).subscribe(result => {
+      if (result.matches) {
+        if (result.breakpoints[Breakpoints.Handset]) {
+          this.profileImageSrc = 'assets/profile-small.png';
+        } else if (result.breakpoints[Breakpoints.Tablet]) {
+          this.profileImageSrc = 'assets/profile-medium.png';
+        } else if (result.breakpoints[Breakpoints.Web]) {
+          this.profileImageSrc = 'assets/profile-large.png';
+        }
+      }
+    });
   }
 
   typeWriter() {
