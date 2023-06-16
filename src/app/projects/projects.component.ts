@@ -32,23 +32,31 @@ export class ProjectsComponent {
       tags: ['Python', 'Pygame'],
       description: 'A roguelite involving a hamster wizard, cursed critters, and an evil snake. Inspired by EarthBound and Slay The Spire. Hastily hacked together in Python.',
       sourceCodeLink: 'https://github.com/wenbakefield/pips-quest',
-      demoLink: 'https://benwakefield.dev/pips-quest'
+      demoLink: 'https://github.com/wenbakefield/pips-quest/releases/tag/v0.3.0-alpha'
     },
     {
       image: './assets/projects/covey.png',
-      title: 'Covey Town',
+      title: 'Covey Critters',
       tags: ['React', 'TypeScript', 'Jest', 'Express', 'Heroku'],
-      description: 'A virtual meeting space where people can have video calls, play games, watch movies together, and share images. For our contribution, we added pets!',
+      description: 'A feature implementation for Covey.Town, which allows users to compete in a carnival game, earn a high score, and win a pet, which follows them around.',
       sourceCodeLink: 'https://github.com/wenbakefield/covey-critters',
-      demoLink: 'https://app.covey.town/'
+      demoLink: 'https://coveytown.benwakefield.dev/'
+    },
+    {
+      image: './assets/projects/axetron.png',
+      title: 'AxeTron',
+      tags: ['C++', 'Arduino', 'PureData'],
+      description: 'Embedded digital effects in an electric guitar, through the power of Arudino, C++, and the Daisy Seed.',
+      sourceCodeLink: 'https://github.com/wenbakefield/axetron',
+      demoLink: 'https://github.com/wenbakefield/axetron/blob/7744f65b100ee551d2b31a23ee27555973e4d1ae/axetron_report.pdf'
     },
     {
       image: './assets/projects/harmony.png',
-      title: 'Harmony',
+      title: 'Duty Dashboard',
       tags: ['Elixir', 'Phoenix', 'Bootstrap', 'Twilio'],
       description: 'Allows a group of roommates to coordinate responsibilities through a simple interface. The app sends text reminders for location-based tasks through Twilio.',
-      sourceCodeLink: 'https://github.com/wenbakefield/cs4550-final-project',
-      demoLink: 'https://your-website.com/project1'
+      sourceCodeLink: 'https://github.com/wenbakefield/duty-dashboard',
+      demoLink: 'https://youtu.be/v5cwNN_dJxk'
     },
     {
       image: './assets/projects/momo.png',
