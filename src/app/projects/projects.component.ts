@@ -52,10 +52,10 @@ export class ProjectsComponent {
     },
     {
       image: './assets/projects/harmony.png',
-      title: 'Duty Dashboard',
+      title: 'Roomies',
       tags: ['Elixir', 'Phoenix', 'Bootstrap', 'Twilio'],
       description: 'Allows a group of roommates to coordinate responsibilities through a simple interface. The app sends text reminders for location-based tasks through Twilio.',
-      sourceCodeLink: 'https://github.com/wenbakefield/duty-dashboard',
+      sourceCodeLink: 'https://github.com/wenbakefield/roomies',
       demoLink: 'https://youtu.be/v5cwNN_dJxk'
     },
     {
