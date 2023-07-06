@@ -46,7 +46,7 @@ export class ProjectsComponent {
       image: './assets/projects/axetron.png',
       title: 'AxeTron',
       tags: ['C++', 'Arduino', 'PureData'],
-      description: 'Embedded digital effects in an electric guitar, through the power of Arudino, C++, and the Daisy Seed.',
+      description: 'Embedded digital effects in an electric guitar, through the power of Arduino, C++, and the Daisy Seed.',
       sourceCodeLink: 'https://github.com/wenbakefield/axetron',
       demoLink: 'https://github.com/wenbakefield/axetron/blob/7744f65b100ee551d2b31a23ee27555973e4d1ae/axetron_report.pdf'
     },
