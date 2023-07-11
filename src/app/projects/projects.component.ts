@@ -66,6 +66,14 @@ export class ProjectsComponent {
       sourceCodeLink: 'https://github.com/wenbakefield/momo',
       demoLink: 'https://github.com/wenbakefield/momo/raw/main/Using%20MobMuPlat%20to%20Develop%20a%20Mobile%20Audio%20Effects%20Unit.pdf'
     },
+    {
+      image: './assets/projects/bentwave.png',
+      title: 'Bent Wavefield',
+      tags: ['KiCAD', 'Analog Electronics'],
+      description: 'An analog synthesizer composed of a modified Baby8 Sequencer and Atari Punk Console, which can be used to create a variety of eight-note musical sequences.',
+      sourceCodeLink: 'https://github.com/wenbakefield/bent-wavefield',
+      demoLink: 'https://youtu.be/5s4sRJsfbWM'
+    },
   ];
   selectedTags: string[] = [];
   filteredProjects: Project[] = [];
