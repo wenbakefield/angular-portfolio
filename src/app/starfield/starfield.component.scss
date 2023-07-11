@@ -21,3 +21,10 @@
     50% { opacity: 1; }
     100% { opacity: 0; }
   }
+
+  @media screen and (max-width: 700px) {
+    .star {
+      width: 1px;
+      height: 1px;
+    }
+}

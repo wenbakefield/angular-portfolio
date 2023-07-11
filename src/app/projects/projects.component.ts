@@ -32,7 +32,7 @@ export class ProjectsComponent {
       tags: ['Python', 'Pygame'],
       description: 'A roguelite involving a hamster wizard, cursed critters, and an evil snake. Inspired by EarthBound and Slay The Spire. Hastily hacked together in Python.',
       sourceCodeLink: 'https://github.com/wenbakefield/pips-quest',
-      demoLink: 'https://github.com/wenbakefield/pips-quest/releases/tag/v0.3.0-alpha'
+      demoLink: 'https://pip.benwakefield.dev/'
     },
     {
       image: './assets/projects/covey.png',
